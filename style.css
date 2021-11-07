@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    background-color: hsla(223, 67%, 68%, 0.534);
+    
+    font-family: Red Hat Display sans-serif;
+}
+.background{
+    background: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+}
+p{
+    font-size: 16px;
+}
+.container{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    overflow: hidden;
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.card-details{
+margin-top: 10px;
+}
+.card-details h1{
+    color: hsl(245, 75%, 52%);
+}
+.card-details p{
+    font-size: 16px;
+    margin: 0 20px 20px 20px;
+    padding: 5px;
+    color: var(--Dark-blue);
+}
+
+.annual-main{
+    display: flex;
+    justify-content: center;
+}
+.AnnualPlan{
+    display: flex;
+    justify-content: space-evenly;
+    width: 254px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+}
+
+.payment button{
+    color: var(--Very-pale-blue);
+    background-color: var(--Bright-blue);
+    justify-content: center;
+    text-align: center;
+    width: 210px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+}
+
+.payment a{
+    margin: 7px;
+        display: flow-root;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media ("min-width:450px"){
+        .container{
+            width: 50%;
+        }
+        .card{
+            width: 50%;
+        }
+    }
+  
